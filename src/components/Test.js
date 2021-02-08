@@ -14,4 +14,4 @@ const styles = StyleSheet.create({
 
 
 });
-//rnfc - создать шаблон
+//rnfc - create template

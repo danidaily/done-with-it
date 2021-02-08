@@ -1,7 +1,10 @@
-import React from 'react';
-import ListingEditScreen from "./src/Screens/ListingEditScreen";
-import ListItem from "./src/components/lists/ListItem";
-import MessagesScreen from "./src/Screens/MessagesScreen";
+import React, {useEffect, useState} from 'react';
+
+import * as ImagePicker from 'expo-image-picker'
+
+
+import ImageInput from "./src/components/ImageInput";
+import Screen from "./src/components/Screen";
 
 
 //switch - переключатель
@@ -11,6 +14,11 @@ import MessagesScreen from "./src/Screens/MessagesScreen";
 export default function App() {
 
     return (
-        <ListingEditScreen/>
+        <Screen>
+            {/*<Button title="Select Image" onPress={selectImage}/>
+            <Image source={{uri: imageUri}} style={{width: 100, height: 100}}/>*/}
+            <ImageInput icon="camera" width={120} height={120}/>
+
+        </Screen>
     );
 }

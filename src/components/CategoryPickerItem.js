@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, StyleSheet} from "react-native";
-import defaultStyles from "../config/styles";
+
 import Icon from "./Icon";
 import AppText from "./AppText";
 
